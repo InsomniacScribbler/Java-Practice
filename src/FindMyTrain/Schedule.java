@@ -4,14 +4,16 @@ import java.time.LocalDateTime;
 
 public class Schedule {
     private Train train;
-    private Station station;
+    private Station srcstation;
+    private Station endstation;
     private String arivalTime;
     private String departureTime;
     private Platform platform;
 
-    public Schedule(Train train, Station station, String arivalTime, String departureTime, Platform platform) {
+    public Schedule(Train train, Station srcstation, Station endstation, String arivalTime, String departureTime, Platform platform) {
         this.train = train;
-        this.station = station;
+        this.srcstation = srcstation;
+        this.endstation = endstation;
         this.arivalTime = arivalTime;
         this.departureTime = departureTime;
         this.platform = platform;
@@ -25,12 +27,20 @@ public class Schedule {
         this.train = train;
     }
 
-    public Station getStation() {
-        return station;
+    public Station getSrcstation() {
+        return srcstation;
     }
 
-    public void setStation(Station station) {
-        this.station = station;
+    public void setSrcstation(Station srcstation) {
+        this.srcstation = srcstation;
+    }
+
+    public Station getEndstation() {
+        return endstation;
+    }
+
+    public void setEndstation(Station endstation) {
+        this.endstation = endstation;
     }
 
     public String getArivalTime() {
@@ -61,9 +71,10 @@ public class Schedule {
     public String toString() {
         return "Schedule{" +
                 "train=" + train +
-                ", station=" + station +
-                ", arivalTime=" + arivalTime +
-                ", departureTime=" + departureTime +
+                ", srcstation=" + srcstation +
+                ", endstation=" + endstation +
+                ", arivalTime='" + arivalTime + '\'' +
+                ", departureTime='" + departureTime + '\'' +
                 ", platform=" + platform +
                 '}';
     }

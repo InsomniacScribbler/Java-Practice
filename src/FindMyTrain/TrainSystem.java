@@ -24,8 +24,8 @@ public class TrainSystem {
     public List<Schedule> findMyTrains(String startstationId, String endstationId){
         List<Schedule> res = new ArrayList<>();
         for(Schedule schedule : schedules){
-            if (schedule.getStation().getStationId().equals(startstationId)
-                    && schedule.getStation().getStationId().equals(endstationId))
+            if (schedule.getSrcstation().getStationId().equals(startstationId)
+                    && schedule.getEndstation().getStationId().equals(endstationId))
             {
                 res.add(schedule);
             }
