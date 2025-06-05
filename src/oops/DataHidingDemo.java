@@ -5,7 +5,8 @@ class ATM{
     private String userName;
     private String pass;
     private String bal;
-
+ // getters and setters aid data hiding but only if used correctly
+    // what that means is that if you make them public there is no way they are hidding data
     public String getUserName() {
         return userName;
     }
