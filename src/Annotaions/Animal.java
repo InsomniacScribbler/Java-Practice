@@ -14,6 +14,6 @@ public class Animal {
 class monkey extends Animal{
 	@Override
 	void display(){
-		System.out.println("Not hello");
+		System.out.println("Hanji kya hall");
 	}
 }
