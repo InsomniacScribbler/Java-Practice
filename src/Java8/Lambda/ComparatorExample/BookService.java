@@ -1,8 +1,6 @@
-package Java8.ComparatorExample;
+package Java8.Lambda.ComparatorExample;
 
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class BookService {

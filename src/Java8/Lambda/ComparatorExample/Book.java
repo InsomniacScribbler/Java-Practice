@@ -1,4 +1,4 @@
-package Java8.ComparatorExample;
+package Java8.Lambda.ComparatorExample;
 
 public class Book {
     private int id;
