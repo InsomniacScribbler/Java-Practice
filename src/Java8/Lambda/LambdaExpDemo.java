@@ -1,4 +1,4 @@
-package Java8.LambdaExpression;
+package Java8.Lambda;
 
 public class LambdaExpDemo {
 
