@@ -21,7 +21,7 @@ public class minCostToVowel {
             if(isVowel) continue;
 
             for(char vowel : vowels){
-                mincost = Math.min(mincost,Math.abs(vowel-c)*10) ;
+                mincost = Math.min(mincost,Math.abs(vowel-c)) ;
             }
             totalCost += mincost;
         }
