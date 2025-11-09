@@ -2,7 +2,6 @@ package DSA.LP3;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class FractionalKnapsackGreedy{
     // Class to represent an item with weight and value
     static class Item {
