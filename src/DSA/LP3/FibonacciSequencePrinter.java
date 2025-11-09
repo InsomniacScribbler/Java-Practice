@@ -1,4 +1,4 @@
-package DSA.QuestionRandoms;
+package DSA.LP3;
 
 import java.util.Scanner;
 
