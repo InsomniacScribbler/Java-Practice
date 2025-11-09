@@ -38,7 +38,7 @@ public class practice {
             newNode.right = right;
             pq.add(newNode);
         }
-        return pq.peek()
+        return pq.peek();
     }
 
     static void codeGenerator(Node root, String code, Map<Character, String> codeMap){
